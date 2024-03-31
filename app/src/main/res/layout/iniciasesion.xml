@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6DEDE"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="348dp"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtdeletproducto"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:gravity="center"
+                android:text="@string/lg"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="260dp"
+                android:layout_height="284dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="375dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="349dp"
+            android:layout_height="377dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/loginEmail"
+                android:layout_width="270dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="@string/cr"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/loginPass"
+                android:layout_width="270dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="@string/cs"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="349dp"
+                android:layout_height="162dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="141dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/redondbtn"
+                    android:text="@string/igr"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:background="@drawable/redondbtn"
+                    android:gravity="center"
+                    android:text="@string/cr_cu"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="@string/rc_c"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

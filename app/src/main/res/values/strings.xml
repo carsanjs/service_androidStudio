@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">service</string>
+    <string name="cr">Correo Electronico</string>
+    <string name="cs">Contraseña</string>
+    <string name="igr">Ingresar</string>
+    <string name="cr_cu">CREAR CUENTA</string>
+    <string name="rc_c">RECUPERAR CONTRASEÑA</string>
+    <string name="lg">LOGIN</string>
+    <string name="name">Nombre</string>
+    <string name="las_name">Apellidos</string>
+    <string name="r_c">RESTABLECER CONTRASEÑA</string>
+    <string name="cl">Cancelar</string>
+    <string name="bv">Bienvenido A..</string>
+    <string name="cb_c">Cambiar Contraseña</string>
+    <string name="ac">Actualizar</string>
+    <string name="ig_i">Ingresa Inventario</string>
+    <string name="in">INVENTARIO</string>
+    <string name="np">NUEVO PRODUCTO</string>
+
+    <string name="cp">Codigo Producto</string>
+    <string name="namep">Nombre Producto</string>
+    <string name="ca">Cantidad Almacen</string>
+    <string name="ct">Costo</string>
+    <string name="p">Precio</string>
+    <string name="gd">Guardar</string>
+
+
+    <string name="en">Enviar</string>
+
+
+</resources>

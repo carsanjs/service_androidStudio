@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6DEDE"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/atras"
+            android:layout_width="83dp"
+            android:layout_height="29dp"
+            app:srcCompat="@drawable/left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="404dp"
+        android:layout_height="212dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtdeletproducto"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:text="@string/cr_cu"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="161dp"
+                android:layout_height="152dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/regis" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="363dp"
+        android:layout_height="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
+        <LinearLayout
+            android:layout_width="319dp"
+            android:layout_height="380dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <EditText
+                android:id="@+id/registerid"
+                android:layout_width="270dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="Documento"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/registerName"
+                android:layout_width="269dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/registerLast"
+                android:layout_width="270dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="@string/las_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="270dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="@string/cr"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/registerPass"
+                android:layout_width="270dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius"
+                android:ems="10"
+                android:hint="@string/cs"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="140dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/redondbtn"
+                    android:text="REGISTRAR" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
